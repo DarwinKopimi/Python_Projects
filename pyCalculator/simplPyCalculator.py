@@ -1,8 +1,26 @@
 print("Do some simple basic math as plus,subtract,multiple and divide")
 print("Enter First Variable")
-user_input_one=raw_input()
+#this wrappers the raw user input into an integer type
+user_input_one=int(input())
 print("Operation to perform")
-operation=raw_input()
+operation=input()
 print("Enter Second Variable")
-user_input_two=raw_input()
+user_input_two=int(input())
 #Actually do some operations with this class
+if operation == "+" :
+ solution=user_input_one + user_input_two
+ print(solution)
+elif operation == "-" :
+ solution = user_input_one - user_input_two
+ print(solution)
+elif operation == "*":
+ solution = user_input_one * user_input_two
+ print(solution)
+elif operation == "/":
+ solution = user_input_one / user_input_two
+ print(solution)
+elif operation == "%":
+ solution = user_input_one % user_input_two
+ print(solution)
+else:
+    print("failed plus")
