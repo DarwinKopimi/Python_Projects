@@ -5,15 +5,21 @@
 
 def listSortAdd():
  print("hit first function")
- user_input = int(input())
  listFunction = []
- listFunction.append(user_input)
  print("Enter other Numbers")
  while(len(listFunction) < 10):
   user_loop_input = int(input())
   listFunction.append(user_loop_input)
- for input_parms in listFunction:
-  print(listFunction[input_parms])
+ print("1: see list,2:sort list,3 remove item off list")
+ user_input = int(input())
+ if (user_input==1):
+  for input_parms in listFunction:
+   print(listFunction[input_parms])
+ elif (user_input == 2):
+  print(sorted(listFunction))
+ elif (user_input == 3):
+  listFunction.pop(0)
+  print(len(listFunction))
 def tupleSortAdd():
  print("hit second function")
 def dictSortAdd():
