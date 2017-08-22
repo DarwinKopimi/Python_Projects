@@ -21,10 +21,22 @@ def listSortAdd():
   listFunction.pop(0)
   print(len(listFunction))
 def tupleSortAdd():
+	#May not be making one with tuples atm
  print("hit second function")
 def dictSortAdd():
  print("hit third function")
-
+ orders = {"1":"tractors","2":"farms","3":"money","4":"monkies"}
+ print("select order")
+ x = input()
+ for keys in orders.keys():
+  #not hitting this if condition need to find out why
+  if orders[keys] == x:
+   print("function hit")
+   print(orders[keys])
+  elif orders[keys] != x:
+   print(orders[keys])
+   print("no more money")
+   break
 def picker():
  option = [0,1,2]
  x = int(input())
